@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Common width starts */
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.full-wraper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.23);
+}
+
+/* Common width Ends */
+
+/* =============
+ Common Css Ends
+============== */
+
+/*=====================
+ Import Font Css Start
+==================*/
+
+@font-face {
+    font-family: 'poppins-reg';
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-med';
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-semb';
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+/*====================
+ Import Font Css Ends
+==================*/
+
+
+
+/* Header Section Start */
+
+.header-top {
+    margin-top: 50px;
+    background: #393e46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-top .logo a img {
+    width: 100%;
+}
+
+
+.header-top .menu ul {
+    display: flex;
+}
+
+
+.header-top .menu ul li button {
+    color: #fff;
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+    background: #4d5259;
+    margin: 0 5px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 50%;
+    transition: all linear .2s;
+}
+
+.header-top .menu ul li button:hover {
+    background: #fabb0d;
+    color: #1f1f1f;
+}
+
+/* Header Section Ends */
+
+
+/* Main Section Left Starts */
+
+.main {
+    display: flex;
+}
+
+.main .main-left {
+    border-bottom-left-radius: 10px;
+    padding: 30px;
+    box-shadow: 10px 0px 15px 0px rgba(15, 120, 236, 0.1);
+    -webkit-box-shadow: 10px 0px 15px 0px rgba(15, 120, 236, 0.1);
+}
+
+.main .main-left .main-header {
+    margin-top: 10px;
+}
+
+.main .main-left .main-header h3 {
+    font-family: 'poppins-semb';
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 5px;
+}
+
+.main .main-left .main-header p {
+    font-family: 'poppins-reg';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #8f9397;
+    padding-right: 50px;
+}
+
+.main .main-left .main-form label {
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 400;
+    color: #585e65;
+}
+
+.main .main-left .main-form input {
+    color: #2e80d4;
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.main .main-left .main-form .input-id,
+.main .main-left .main-form .input-password {
+    background: #ebf4fe;
+    padding: 20px 25px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+.main .main-left .main-form .input-id input {
+    font-family: 'poppins-semb';
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.main .main-left .main-form .input-id .input-label-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.main .main-left .main-form .input-id .input-label-id span {
+    font-size: 22px;
+    color: #585e65;
+    transition: all linear .1s;
+}
+
+.main .main-left .main-form .input-id .input-label-id span:hover {
+    color: #393e46;
+}
+
+
+
+.main .main-left .main-form .input-password .input-label-password {
+    margin-bottom: 15px;
+}
+
+.main .main-left .main-form .input-password .input-group input {
+    font-family: 'poppins-reg';
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.main .main-left .main-form .input-password .input-group {
+    display: flex;
+}
+
+.main .main-left .main-form .input-password .input-group .eye-button {
+    display: flex;
+}
+
+.main .main-left .main-form .input-password .input-group .eye-button span {
+    color: #585e65;
+    margin-left: 20px;
+    transition: all linear .1s;
+}
+
+.main .main-left .main-form .input-password .input-group .eye-button span:hover {
+    color: #393e46;
+}
+
+/* Main Section Left ends */
+
+
+.main .main-left .main-footer {
+    text-align: center;
+    padding: 25px;
+    background: #afd5ff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.main .main-left .main-footer img {}
+
+.main .main-left .main-footer p {
+    font-family: 'poppins-med';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1f1f1f;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.main .main-left .main-footer button {
+    font-family: 'poppins-med';
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #393e46;
+    border: none;
+    outline: none;
+    line-height: 57px;
+    padding: 0 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all linear .1s;
+}
+
+.main .main-left .main-footer button:hover {
+    background: #fabb0d;
+    color: #1f1f1f;
+}
+
+/* Main Section Right Starts */
+
+.main .main-right {
+    padding: 40px 40px 0 40px;
+}
+
+.main .main-right .main-control {
+    padding-left: 45px;
+}
+
+.main .main-right .main-control label {
+    display: block;
+    font-family: 'poppins-reg';
+    font-weight: 400;
+    color: #363636;
+    font-size: 28px;
+}
+
+.main .main-right .main-control input {
+    display: block;
+    font-family: 'poppins-med';
+    font-size: 35px;
+    width: 100%;
+    padding: 15px 35px;
+    border: 1px solid #cec5ae;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+    letter-spacing: 3px;
+}
+
+.main .main-right .main-control .submit-btn {
+    text-align: right;
+}
+
+.main .main-right .main-control .submit-btn button {
+    font-family: 'poppins-semb';
+    font-size: 22px;
+    color: #393e46;
+    background: transparent;
+    border: 1px solid #393e46;
+    border-radius: 10px;
+    line-height: 75px;
+    display: inline-block;
+    padding: 0 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all linear .1s;
+}
+
+.main .main-right .main-control .submit-btn button:hover {
+    background: #fabb0d;
+    color: #1f1f1f;
+    border-color: #dbb13e;
+}
+
+.main .main-right .main-session {
+    margin-top: 85px;
+}
+
+.main .main-right .main-session .session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main .main-right .main-session .session-header .session-text {}
+
+.main .main-right .main-session .session-header .session-text button {
+    font-family: 'poppins-semb';
+    font-size: 18px;
+    color: #6f7275;
+    position: relative;
+    margin-right: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all linear .2s;
+}
+
+.main .main-right .main-session .session-header .session-text button:first-child {
+    color: #393e46;
+}
+
+.main .main-right .main-session .session-header .session-text button:hover {
+    color: #393e46;
+}
+
+.main .main-right .main-session .session-header .session-text button:last-child {
+    margin-right: 0;
+}
+
+.main .main-right .main-session .session-header .session-text button::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #f8b806;
+    bottom: -15px;
+    left: 0;
+    transition: all linear .1s;
+}
+
+.main .main-right .main-session .session-header .session-text button:first-child:before {
+    width: 100%;
+}
+
+.main .main-right .main-session .session-header .session-text button:hover:before {
+    width: 100%;
+}
+
+.main .main-right .main-session .session-header .session-icon {
+    display: flex;
+    align-items: center;
+}
+
+.main .main-right .main-session .session-header .session-icon .input-group {
+    position: relative;
+}
+
+.main .main-right .main-session .session-header .session-icon .input-group span {
+    color: #969da5;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .main-right .main-session .session-header .session-icon .input-group input {
+    font-family: 'poppins-reg';
+    font-size: 18px;
+    color: #969da5;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #dce0e3;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+.main .main-right .main-session .session-header .session-icon i {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #5d6063;
+    transition: all linear .1s;
+}
+
+.main .main-right .main-session .session-header .session-icon i:hover {
+    color: #393e46;
+}
+
+.main .main-right .main-session .session-colum {
+    margin-bottom: 20px;
+}
+
+.main .main-right .main-session .session-colum ul {}
+
+.main .main-right .main-session .session-colum ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.main .main-right .main-session .session-colum ul li h3 {
+    font-family: 'poppins-reg';
+    font-weight: 400;
+    font-size: 20px;
+    color: #393e46;
+}
+
+.main .main-right .main-session .session-colum ul li h3 span {
+    color: #3584d5;
+    margin-right: 20px;
+}
+
+.main .main-right .main-session .session-colum ul li p {
+    font-family: 'poppins-reg';
+    font-weight: 400;
+    font-size: 20px;
+    color: #393e46;
+}
+
+.main .main-right .main-session .session-colum ul li button {
+    font-family: 'poppins-semb';
+    font-weight: 600;
+    font-size: 20px;
+    color: #393e46;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #393e46;
+}
+
+.main .col-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .main-footer {
+    padding: 15px 40px;
+    background: #f2f6fb;
+    border-bottom-right-radius: 10px;
+}
+
+.main .main-footer p {
+    font-family: 'poppins-semb';
+    font-size: 16px;
+    color: #606366;
+}
+
+.main .main-footer p span {
+    color: #2aa870;
+    margin-right: 10px;
+}
+
+/* Main Section Right Ends */
